@@ -17,10 +17,46 @@
             /* 让块级的盒子水平居中对齐 */
             margin: 100px auto;
         }
+        .box img {
+            /* 图片的宽度和父亲的一样宽 */
+            width: 100%;
+        }
+        .review {
+            height: 70px;
+            font-size: 14px;
+            padding: 0 28px;
+            /* 因为这个段落没有width属性 所以padding不会撑开盒子的宽度 */
+            margin-top: 30px;
+        }
+        .appraise {
+            font-size: 12px;
+            color: #b0b0b0;
+            margin-top: 20px;
+            padding: 0 28px;
+        }
+        .info {
+            font-size: 14px;
+            margin-top: 15px;
+            padding: 0 28px;
+        }
+        .info h4 {
+            display: inline-block;
+            font-weight: 400;
+        }
+        .info span {
+            color: #ff6700;
+        }
 
     </style>
 </head>
 <body>
-    <div class="box">123</div>
+    <div class="box">
+        <img src="xiaomi.jpg" alt="">
+        <p class="review">快递牛，整体不错蓝牙可以说秒连。红米给力</p>
+        <div class="appraise">来自于 117384232 的评价</div>
+        <div class="info">
+            <h4>Redmi AirDots真无线蓝...</h4> 
+            |<span>99.9元</span></div>
+    </div>
 </body>
 </html>
